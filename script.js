@@ -61,8 +61,8 @@ if (window.innerWidth > 768) {
         el.addEventListener('mouseenter', () => {
             gsap.to(cursorFollower, {
                 scale: 1.5,
-                background: 'rgba(255,77,77,0.1)',
-                border: '1px solid rgba(255,77,77,0.5)',
+                background: 'rgba(0, 0, 0, 0.05)',
+                border: '1px solid rgba(0, 0, 0, 0.3)',
                 duration: 0.3
             });
             cursor.style.display = 'none';
@@ -72,7 +72,7 @@ if (window.innerWidth > 768) {
             gsap.to(cursorFollower, {
                 scale: 1,
                 background: 'transparent',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                border: '1px solid rgba(0, 0, 0, 0.2)',
                 duration: 0.3
             });
             cursor.style.display = 'block';
