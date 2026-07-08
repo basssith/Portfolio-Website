@@ -1050,3 +1050,109 @@ footer {
         gap: 40px;
     }
 }
+
+/* Timeline / Design Process */
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.timeline-node {
+    background: rgba(0,0,0,0.01);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    transition: transform 0.3s, background 0.3s;
+}
+.timeline-node:hover {
+    transform: translateY(-4px);
+    background: rgba(0,0,0,0.02);
+}
+.node-num {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: var(--text-primary);
+    opacity: 0.15;
+    margin-bottom: 12px;
+    display: block;
+}
+.node-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+.node-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* User Flow Step Tracker */
+.user-flow-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.flow-step {
+    flex: 1;
+    min-width: 170px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    transition: transform 0.3s;
+}
+.flow-step:hover {
+    transform: translateY(-2px);
+}
+.flow-step-num {
+    width: 28px;
+    height: 28px;
+    background: var(--text-primary);
+    color: var(--bg-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 auto 12px;
+}
+.flow-step-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+.flow-step-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+.flow-arrow {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    opacity: 0.4;
+}
+@media (max-width: 900px) {
+    .process-timeline {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .user-flow-steps {
+        flex-direction: column;
+    }
+    .flow-arrow {
+        transform: rotate(90deg);
+        margin: 8px 0;
+    }
+}
