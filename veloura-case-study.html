@@ -177,61 +177,71 @@
         </div>
     </nav>
 
-    <main class="editorial-container">
-        
-        <!-- Back Button -->
-        <div style="text-align: left; margin-bottom: 40px;">
-            <a href="index.html#work" class="btn btn-outline-dark" style="padding: 8px 20px; font-size: 0.8rem; border-radius: 100px;">
-                ← Back to Projects
-            </a>
+    <!-- Dark Presentation Header Slide (Full screen, black background) -->
+    <header style="background: #000000; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 120px 10% 80px; box-sizing: border-box; position: relative;">
+        <!-- Top Nav matching the screenshot model -->
+        <div style="position: absolute; top: 40px; right: 10%; display: flex; gap: 12px;">
+            <a href="index.html#home" class="btn btn-outline-dark" style="color: #ffffff; border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); padding: 8px 20px; border-radius: 100px; font-size: 0.85rem; text-transform: uppercase; font-weight: 500; font-family: var(--font-body);">Home</a>
+            <a href="index.html#work" class="btn btn-outline-dark" style="color: #ffffff; border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); padding: 8px 20px; border-radius: 100px; font-size: 0.85rem; text-transform: uppercase; font-weight: 500; font-family: var(--font-body);">Work</a>
+            <a href="index.html#contact" class="btn btn-outline-dark" style="color: #ffffff; border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); padding: 8px 24px; border-radius: 100px; font-size: 0.85rem; text-transform: uppercase; font-weight: 500; font-family: var(--font-body);">Contact</a>
         </div>
 
-        <!-- Project Title -->
-        <h1 class="editorial-title reveal-text">
-            Veloura Perfume App
-        </h1>
-
-        <!-- Hero Split Section -->
-        <section class="hero-split reveal-card">
-            <!-- Left Side Cover Image -->
-            <div class="hero-left-image">
-                <img src="assets/veloura-new.png" alt="Veloura Perfume App Hero Display">
+        <div style="max-width: 800px; width: 100%; text-align: center;">
+            <!-- Back button inside slide -->
+            <div style="text-align: left; margin-bottom: 30px;">
+                <a href="index.html#work" style="color: #888888; font-family: var(--font-body); font-size: 0.9rem; text-decoration: none; cursor: none; transition: color 0.3s;" onmouseenter="this.style.color='#ffffff'" onmouseleave="this.style.color='#888888'">
+                    ← Back to Projects
+                </a>
             </div>
+
+            <!-- Giant Title -->
+            <h1 class="reveal-text" style="font-family: var(--font-heading); font-size: clamp(3rem, 7.5vw, 6.5rem); font-weight: 800; letter-spacing: -2px; line-height: 1.0; margin-bottom: 24px; color: #ffffff; text-transform: none;">
+                Veloura App
+            </h1>
             
-            <!-- Right Side Metadata Box -->
-            <div class="hero-right-meta">
-                <div>
-                    <p class="meta-description">
-                        A modern mobile application built to simplify luxury e-commerce by engaging sensory storytelling, interactive scent breakdowns, and visual scent matching.
-                    </p>
-                    
-                    <div class="meta-list">
-                        <div class="meta-list-item">
-                            <span class="meta-list-label">Category:</span>
-                            <span class="meta-list-value">Mobile UI/UX Design</span>
-                        </div>
-                        <div class="meta-list-item">
-                            <span class="meta-list-label">Timeline:</span>
-                            <span class="meta-list-value">4 Weeks</span>
-                        </div>
-                        <div class="meta-list-item">
-                            <span class="meta-list-label">Client:</span>
-                            <span class="meta-list-value">Luxury Brand Concept</span>
-                        </div>
-                        <div class="meta-list-item">
-                            <span class="meta-list-label">Year:</span>
-                            <span class="meta-list-value">2026</span>
-                        </div>
+            <!-- Description Statement -->
+            <p class="reveal-text" style="font-family: var(--font-body); font-size: 1.15rem; color: #cccccc; line-height: 1.6; max-width: 650px; margin: 0 auto 50px; text-transform: none;">
+                I'm Abdul Basith I — a UI/UX designer focused on building modern, high-performing digital experiences. I combine clean visual design with strategic thinking to create mobile apps that don't just look good, but work.
+            </p>
+
+            <!-- Table Grid of Badges/Capsules -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); width: 100%; text-align: left; font-family: var(--font-body); margin-top: 40px;">
+                <!-- Row 1 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 20px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div>
+                        <span style="font-size: 0.85rem; color: #888888; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Service</span>
+                        <span style="display: inline-block; background: #111111; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; color: #ffffff;">
+                            Design + Development
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.85rem; color: #888888; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Year</span>
+                        <span style="display: inline-block; background: #111111; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; color: #ffffff;">
+                            2026
+                        </span>
                     </div>
                 </div>
-                
-                <div style="margin-top: 40px;">
-                    <a href="https://www.figma.com/design/8P2TFofRhMl5zCKDnx6nrr/UI-DESIGN?node-id=0-1&t=sDpjngQ4IBk1y1Al-1" target="_blank" rel="noopener noreferrer" class="btn-editorial-cta">
-                        View Figma Design
-                    </a>
+                <!-- Row 2 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 20px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div>
+                        <span style="font-size: 0.85rem; color: #888888; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Credits</span>
+                        <span style="display: inline-block; background: #111111; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; color: #ffffff;">
+                            Abdul Basith I
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.85rem; color: #888888; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Link</span>
+                        <a href="https://www.figma.com/design/8P2TFofRhMl5zCKDnx6nrr/UI-DESIGN?node-id=0-1&t=sDpjngQ4IBk1y1Al-1" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #111111; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; color: #ffffff; text-decoration: none; cursor: none;">
+                            Live site
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
+
+    <!-- Light Editorial Body Container -->
+    <main class="editorial-container" style="padding-top: 80px;">
 
         <!-- Challenges & Solutions Split Section -->
         <section class="editorial-split-block reveal-text">
@@ -249,9 +259,22 @@
             </div>
         </section>
 
-        <!-- Full Bleed Banner Showcase Image -->
-        <section class="full-bleed-media reveal-card">
-            <img src="assets/perfume-app.png" alt="Veloura App Screens Mockup Showcase">
+        <!-- Showcase Image Section with Multiple Images -->
+        <section class="reveal-card" style="margin-bottom: 120px; display: flex; flex-direction: column; gap: 40px;">
+            <!-- Mobile Screens Showcase (Full bleed) -->
+            <div class="full-bleed-media" style="margin-bottom: 0;">
+                <img src="assets/perfume-app.png" alt="Veloura App Screens Mockup Showcase">
+            </div>
+            
+            <!-- Side-by-Side Mockup Layout -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div style="border: 1px solid rgba(0, 0, 0, 0.05); overflow: hidden;">
+                    <img src="assets/veloura-new.png" alt="Veloura App Mockup" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="border: 1px solid rgba(0, 0, 0, 0.05); overflow: hidden;">
+                    <img src="assets/veloura-web.png" alt="Veloura Web Mockup" style="width: 100%; height: auto; display: block;">
+                </div>
+            </div>
         </section>
 
         <!-- Stakeholders Section -->
