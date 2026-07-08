@@ -255,13 +255,16 @@ if (window.innerWidth > 768) {
 const scrollLinks = document.querySelectorAll('.nav-link');
 scrollLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        lenis.scrollTo(targetElement, {
-            offset: -100, // Account for fixed navbar
-            duration: 1.5
-        });
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+                e.preventDefault();
+                lenis.scrollTo(targetElement, {
+                    offset: -100, // Account for fixed navbar
+                    duration: 1.5
+                });
+            }
+        }
     });
 });

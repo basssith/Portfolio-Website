@@ -821,3 +821,232 @@ footer {
     .cursor, .cursor-follower { display: none; }
     body, a { cursor: auto; }
 }
+
+/* Case Study Layouts */
+.case-study-hero {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.case-study-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 60px 0;
+    padding: 30px 0;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.meta-item {
+    text-align: left;
+}
+
+.meta-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.meta-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.case-study-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding-bottom: 120px;
+}
+
+.case-study-block {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.case-study-block.wide {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.case-study-block.reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.case-study-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+}
+
+.case-study-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.case-study-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.case-study-content li {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 28px;
+}
+
+.case-study-content li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+}
+
+.case-study-media {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+}
+
+.case-study-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.design-system-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+}
+
+.swatches-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.swatch-card {
+    flex: 1;
+    min-width: 120px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+
+.swatch-color {
+    height: 100px;
+    width: 100%;
+}
+
+.swatch-info {
+    padding: 16px;
+    font-family: var(--font-body);
+}
+
+.swatch-hex {
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: block;
+    color: var(--text-primary);
+}
+
+.swatch-name {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-top: 4px;
+}
+
+.typography-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.typo-sample {
+    margin-bottom: 24px;
+}
+
+.typo-sample:last-child {
+    margin-bottom: 0;
+}
+
+.typo-font {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.typo-preview {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.typo-preview.playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.typo-preview.syne {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+.typo-preview.inter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.case-study-cta {
+    text-align: center;
+    padding: 80px 0;
+    border-top: 1px solid var(--glass-border);
+}
+
+.case-study-cta h3 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 32px;
+    font-family: var(--font-heading);
+}
+
+@media (max-width: 900px) {
+    .case-study-meta-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .case-study-block, .case-study-block.reverse, .design-system-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
