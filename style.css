@@ -451,6 +451,8 @@ a {
 .stacked-project-card:nth-child(1) { top: 100px; z-index: 1; }
 .stacked-project-card:nth-child(2) { top: 120px; z-index: 2; }
 .stacked-project-card:nth-child(3) { top: 140px; z-index: 3; }
+.stacked-project-card:nth-child(4) { top: 160px; z-index: 4; }
+.stacked-project-card:nth-child(5) { top: 180px; z-index: 5; }
 
 .stacked-project-bg {
     position: absolute;
@@ -497,8 +499,8 @@ a {
 
 .stacked-tag {
     display: inline-block;
-    background: #ccff00;
-    color: #000;
+    background: #ffffff;
+    color: #000000;
     font-weight: 700;
     font-size: 0.85rem;
     padding: 8px 20px;
@@ -531,7 +533,7 @@ a {
 .stacked-toggle {
     width: 64px;
     height: 32px;
-    background: #ccff00;
+    background: #ffffff;
     border-radius: 100px;
     position: relative;
     cursor: none;
@@ -547,7 +549,7 @@ a {
     left: 4px;
     width: 24px;
     height: 24px;
-    background: #000;
+    background: #000000;
     border-radius: 50%;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
